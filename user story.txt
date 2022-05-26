@@ -1,0 +1,14 @@
+User Story 1
+Given I have credentials to the login page https://vsmonitor.com/
+And I fill in the Email dd_test_1@outlook.com
+And I fill in the Password: }krK,gdC6
+When I click the login button
+Then I am navigated to the Homepage
+
+scenario 'Login' do
+  call was given 'the link to access the login page https://vsmonitor.com/'
+  call and 'i fill in the Email dd_test_1@outlook.com'
+  call and 'i input the password given }krK,gdC6'
+  call when 'i click the login button'
+  call then 'i am navigated to the Homepage'
+end
